@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <form >
+        <fieldset>
+            <legend>Registeration Details</legend>
+            <label for="university">University: </label>
+            <input type="text" name="university" id="university"><br><br>
+            <label for="institute">Institute: </label>
+            <input type="text" name="institute" id="institute"><br><br>
+            <label for="branch">Branch : </label>
+            <select name="branch" id="branch">
+                <option value="select" selected>--select--</option>
+                <option value="it">IT</option>
+                <option value="comp">Comp</option>
+                <option value="etc">ETC</option>
+                <option value="ene">ENE</option>
+            </select><br><br>
+            <label for="degree">Degree:</label>
+            <select name="degree" id="degree">
+                <option value="select" selected>--select--</option>
+                <option value="be">B.E</option>
+                <option value="me">M.E</option>
+            </select>
+            <input type="radio" name="pursuing" id="pursuing">Pursuing
+            <input type="radio" name="completed" id="completed">Completed <br><br>
+            <label for="averange">Averange CPI : </label>
+            <input type="number" name="cpi" id="cpi" >  Upto <input type="number" name="sem" id="sem"> Th Semester <br><br>
+            <label for="experiencce">Experience: </label>
+            <input type="number" name="exp" id="exp"> Years <br><br>
+           <label> Your Website Or Blog :</label><input type="url" name="website" id="website">
+        </fieldset>
+    </form>
+</body>
+</html>

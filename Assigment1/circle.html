@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+    <style>
+        *{font-family: cursive; }
+        body{
+            background-color: rgb(74, 53, 192);
+        }
+
+        button{
+            margin-top: 30px;
+            background-color: rgb(163, 125, 250);
+            border-color: white;
+            text-align: left;
+        }
+
+        button:hover{
+            background-color: rgb(152, 65, 192);
+            color:white;
+        }
+
+        .circle{
+            color: white;
+            max-width: 100%;
+            margin-top: 40px;
+            margin-left: 350px;
+            padding-top: 40px;
+            padding-left: 60px;
+            width: 40%;
+            height: 200px;
+            background-color: rgba(5, 8, 8, 0.616);
+        }
+    </style>
+</head>
+<body>
+        <div class="circle">
+        <label for="radius">Enter Radius :</label>
+        <input type="text" name="radius" id="radius"><br>
+        <button type="submit" onclick="circle()">display</button>
+        <p id="area"></p>
+        <p id="circumference"></p>
+        </div>
+    <script>
+
+function circle(){
+    let radius= document.getElementById('radius');
+    let area = Math.round(Math.PI * Math.pow(radius.value,2));
+    let circumference= Math.round(2 * Math.PI * radius.value);
+
+
+    document.getElementById('area').innerHTML="Area : " + area + "<br>";
+    
+    document.getElementById('circumference').innerHTML="Circumference : " + circumference + "<br>";
+
+   // overhere u can even have 1 p tag with id as answer 
+   // for op u can do document.getElementById('answer').innerHTML= "Area : " + area + "<br>" +"Circumference : " + circumference + "<br>"
+   
+}
+    </script>
+</body>
+</html>

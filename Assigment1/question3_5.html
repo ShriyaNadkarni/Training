@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Assignment 1 </h2>
+
+    <!-- Question 3 -->
+    <h2>Question 3 : </h2>
+    <label for="num1">Number 1</label>
+    <input type="number" name="num1" id="num1">
+    <label for="num2">Number 2</label>
+    <input type="number" name="num2" id="num2">
+    <button onclick="getValue()">Get Value</button>
+    <p id="para1"></p>
+
+
+
+<!-- Question 4 -->
+<!-- For this question i have tried using for , while and do-while loop 
+    but i have commented the while n do-while loop in script as all 3 loops won't work at same time -->
+
+<h2>Question 4 : </h2>
+<label for="number">number : </label>
+<input type="text" name="number" id="number">
+<label for="message">Message :</label>
+<input type="text" name="message" id="message">
+<button type="submit" onclick="getMessage()">submit</button>
+<p id="para2"></p>
+
+
+<!-- Question 5 -->
+<h2>Question 5 : </h2>
+<label for="number2">Number : </label>
+<input type="text" name="number2" id="number2">
+<button type="submit" onclick="getEven()">Submit</button>
+<p id="para3"></p>
+
+
+    <script>
+       
+//    Question 3
+       function getValue() {
+    const num1 = document.getElementById('num1');
+    const num2 = document.getElementById('num2');
+
+    if (num1.value > num2.value) {
+        document.getElementById('para1').innerHTML = num1.value;
+    } else {
+        document.getElementById('para1').innerHTML = num2.value;
+    }
+}
+
+
+//Question 4
+// For this question u can use any of the while , do while loop also 
+
+//For loop :
+
+function getMessage() {
+    let number = document.getElementById('number');
+    let message = document.getElementById('message');
+    let output = "";
+
+    for (let i = 0; i < number.value; i++) {
+        output += message.value + "<br>"; 
+    }
+    document.getElementById('para2').innerHTML = output;
+}
+
+//While loop : 
+
+// function getMessage() {
+//             let number = document.getElementById('number').value;
+//             let message = document.getElementById('message').value;
+//             let output = "";
+//             let i = 0;
+
+//             while (i < number) {
+//                 output += message + "<br>";
+//                 i++;
+//             }
+
+//             document.getElementById('para2').innerHTML = output;}
+
+
+//do-while loop
+
+// function getMessage() {
+//             let number = document.getElementById('number').value;
+//             let message = document.getElementById('message').value;
+//             let output = "";
+//             let i = 0;
+
+//             do {
+//                 output += message + "<br>";
+//                 i++;
+//             } while (i < number);
+
+//             document.getElementById('para2').innerHTML = output;
+//         }
+
+
+
+//Question 5
+//For loop
+// function getEven() {
+//     let number2 = document.getElementById('number2').value;
+//     let output = "";
+
+//     for (let i = 0; i <= number2; i++) {
+//         if (i % 2 === 0) {
+//             output += i + "<br>";
+//         }
+//     }
+
+//     document.getElementById('para3').innerHTML = output;
+// }
+
+//while loop
+
+// function getEven() {
+//             let number2 = document.getElementById('number2').value;
+//             let output = "";
+//             let i = 0;
+
+//             while (i <= number2) {
+//                 if (i % 2 === 0) {
+//                     output += i + "<br>";
+//                 }
+//                 i++;
+//             }
+
+//             document.getElementById('para3').innerHTML = output;
+//         }
+
+//do-while loop
+
+function getEven() {
+            let number2 = document.getElementById('number2').value;
+            let output = "";
+            let i = 0;
+
+            do {
+                if (i % 2 === 0) {
+                    output += i + "<br>";
+                }
+                i++;
+            } while (i <= number2);
+
+            document.getElementById('para3').innerHTML = output;
+        }
+
+
+        </script>
+</body>
+</html>

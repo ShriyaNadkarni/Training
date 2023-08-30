@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(6, 71, 146);
+    color: white;
+}
+
+/* I think i m a little bit weak in responsiveness , grid ,display thoses parts in css i tried using whatever css i knew */
+
+form{
+    width: 50%;
+}
+
+legend {
+    text-align: left;
+}
+
+label {
+    display: inline-block; 
+    width: 160px; 
+    margin-right: 10px; 
+    margin-left: 120px;
+}
+
+input[type="text"],
+input[type="url"] {
+    display: inline-block; 
+    width: 200px; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+input[type="number"] {
+    display: inline-block;
+    height: 10px;
+    width: 30px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+select {
+    display: inline-block;
+    width: 90px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
