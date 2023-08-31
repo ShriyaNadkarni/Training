@@ -1,0 +1,57 @@
+body{
+    background-color: aquamarine;
+}
+
+
+abbr{
+    display: inline;
+}
+
+blockquote{
+display:block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-right: 40px;
+margin-left: 40px;
+}
+
+dfn,i,em,var{
+    font-style: italic;
+}
+
+pre{
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin:1em 0;
+}
+
+b{
+    font-weight: bold;
+}
+address{
+    display: block;
+    font-style: italic;
+}
+
+code,samp{
+    font-family: monospace;
+}
+
+ins{
+    text-decoration: underline;
+}
+del{
+    text-decoration: line-through;
+}
+small{
+    font-size: smaller;
+}
+sup{
+    vertical-align: super;
+    font-size: smaller;
+}
+sub{
+    vertical-align: super;
+    font-size: smaller;
+}
