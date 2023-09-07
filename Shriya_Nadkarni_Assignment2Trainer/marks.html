@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <script src="script3.js" defer></script>
+    <title>Student Marks</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo"><img src="/images/logo.jpg" alt="logo"></div>
+            <ul class="navbar-menu">
+                <li><a href="/home.html">Home</a></li>
+                <li class="navbar-dropdown">
+                    <a href="#">Academics &#9662;</a>
+                    <ul class="dropdown-content">
+                        <li><a href="/marks.html">Marks</a></li>
+                        <li><a href="/course.html">Course</a></li>
+                    </ul>
+                </li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="/Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="student-details">
+            <p><strong>Name:</strong>    Shriya Nadkarni</p>
+            <p><strong>Student ID:</strong>   191106059</p>
+            <p><strong>Course:</strong>   BE Information Technology</p>
+        </section>
+
+        <section class="marks-table">
+            <h2>Marks Table</h2>
+    <label for="subject-filter">Filter by Subject:</label>
+    <select id="subject-filter">
+        <option value="all">All Subjects</option>
+        <option value="DBMS">DBMS</option>
+        <option value="Web Technology">Web Technology</option>
+        <option value="Java Programming">Java Programming</option>
+        <option value="IP">IP</option>
+        <option value="CCNS">CCNS</option>
+        <option value="AI">AI</option>
+        <option value="Python">Python</option>
+    </select>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="marks-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <ul>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/course.html">Course</a></li>
+                    <li><a href="/marks.html">Marks</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>&copy; 2023 GEC. All rights reserved.</p>
+            <address>Ponda Goa</address>
+            <p>Email: nshriyatrellissoft.ai</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

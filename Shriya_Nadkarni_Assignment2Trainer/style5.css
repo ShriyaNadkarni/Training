@@ -1,0 +1,212 @@
+body{
+    font-family: cursive;
+    color: white;
+}
+
+
+.navbar {
+    background-color: rgba(23, 103, 112, 0.7);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo img{
+    height: 100px;
+    width: 100%;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #26067e;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1110108a;
+    border: 1px solid #1b1717;
+    z-index: 1;
+    list-style-type: none;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: #fff;
+}
+
+.dropdown-content a:hover {
+    color: #66c2ff;
+}
+
+
+h2{
+    text-align: center;
+}
+
+
+body{
+    font-family: cursive;
+    background-image: url('/images/HomeImg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.student-details{
+    background-color: rgba(14, 13, 13, 0.521);
+    color:white;
+}
+
+.marks-table{
+    background-color: rgba(14, 13, 13, 0.521);
+    text-align:right;
+    color:white;
+}
+table {
+    margin-left:400px;
+    border-collapse: collapse;
+    width: 40%;
+}
+
+th {
+    padding: 10px; 
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+footer {
+    background-image: url('/images/gecNight.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; 
+    text-align: center;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 10px;
+    display: flex; 
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+.footer-content > div {
+    flex: 1; 
+    text-align: left; 
+}
+
+.contact-form{
+    display: flex;
+background-color: #0000008f;
+width: 400px;
+margin-left: 400px;
+  }
+  
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 40%;
+    padding-left: 30px;
+    margin-left: 50px;
+  }
+  
+
+  .msg{
+    width: 80%;
+    margin-left: 50px;
+  }
+  
+  .input-fields .input,
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 0px;
+    border-bottom: 2px solid #e4dfdf;
+    padding: 10px;
+    color: #eef5f8;
+    width: 80%;
+    padding-left: 30px;
+  }
+  
+  .msg textarea{
+    height: 200px;
+  }
+  
+  
+  
+  button{
+      background: #39b7dd;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+  
+  main{
+    height: 200px;
+    width: 50%;
+    margin-left: 240px;
+    margin-top: 50px;
+  }
+  
+  .error-message {
+    color: red;
+}

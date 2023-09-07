@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    color: white;
+}
+
+
+.intro{
+    margin-top: 30px;
+    background-color: #0c08087e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/images/HomeImg.jpg');
+    background-size: cover;
+}
+
+
+
+
+.navbar {
+    background-color: rgba(23, 103, 112, 0.7);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-logo img{
+    height: 100px;
+    width: 100%;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #26067e;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1110108a;
+    border: 1px solid #1b1717;
+    z-index: 1;
+    list-style-type: none;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: #fff;
+}
+
+.dropdown-content a:hover {
+    color: #66c2ff;
+}
+
+
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+}
+
+img {
+    max-width: 100%;
+    width:700px;
+    height:300px;
+    
+}
+
+.carousel-container img{
+    max-width: 100%;
+    width:880px;
+    height:300px;
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+button {
+height: 50px;
+width: 10%;
+   color: black;
+   font-family: cursive;
+margin-left: 340px;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.grid-childvision{
+background-color: #0704048f;
+text-align: center;
+margin-left: 40px;
+margin-bottom: 50px;
+}
+
+.grid-childmission{
+    background-color: #0704048f;
+    text-align: center;
+    margin-left: 40px;
+    margin-bottom: 50px;
+    }
+
+
+footer {
+    background-image: url('/images/gecNight.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; 
+    text-align: center;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 10px;
+    display: flex; 
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+.footer-content > div {
+    flex: 1; 
+    text-align: left; 
+}
