@@ -1,0 +1,19 @@
+button.green{
+    background-color: rgb(23, 231, 23);
+}
+
+button.blue{
+    background-color: rgb(30, 30, 230);
+}
+
+button.pink {
+    background-color: pink;
+}
+button.red {
+    background-color: red;
+}
+
+
+/* justify-content : col
+align-items : row */
+

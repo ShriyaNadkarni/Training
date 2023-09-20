@@ -1,0 +1,29 @@
+*{
+    margin : 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width : 100%;
+    border: 1px solid blueviolet;
+   text-align: center;
+ }
+ /* Define the animation */
+ @keyframes slide {
+    0% { transform: translateX(10); }
+    100% { transform: translateX(250px); }
+}
+
+/* Apply the animation to an element */
+.box {
+    width: 140px;
+    height: 140px;
+    background-color: rgb(34, 211, 11);
+    animation: slide 2s ease infinite; 
+    color: white;
+}
+
+#main-heading{
+    color: crimson;
+}
