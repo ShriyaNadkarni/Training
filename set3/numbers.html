@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Q5  -->
+    <div>
+        <h2>precision numbers</h2>
+        <p>JavaScript numbers are always stored as double precision floating point numbers . This format stores numbers
+            in 64 bits, where the number (the fraction) is stored in bits 0 to 51, the exponent in bits 52 to 62, and
+            the sign in bit 63 . For Integer Value the precision is about 15 digits , whereas for float values the
+            precision is not always accurate </p>
+
+        <ol>
+            <li>BigInt : This can be used only for integer values , this won't work for floating values (eg :
+                2345678901234n here n determines bigint)</li>
+            <li>Round Numbers: If you have numbers with too many decimal places, round them to a reasonable level of
+                precision.</li>
+        </ol>
+    </div>
+    <br>
+    <br>
+    <div id="six"> </div>
+    <div id="six2"></div>
+    <br>
+
+
+
+    <!-- Q8 -->
+    <h2>how are Number object different from their respective global model?</h2>
+    <p>In practice, you would typically use the global functions when working with numeric values, and you may use
+        Number object methods when you have a Number object created explicitly. However, JavaScript often performs
+        automatic type coercion, so you might not always need to create Number objects explicitly.</p>
+    <br>
+    <p>The difference is that these methods are used when you're working with numbers in a special way, using the Number
+        object. When you work with regular numbers (not wrapped in Number objects), you use the global functions like
+        toFixed() directly on the numbers.</p>
+
+
+
+
+
+
+
+    <script>
+
+        // Q6 i , ii , iii 
+        const num1 = 0.1;
+        const num2 = 0.19;
+        let result1 = (num1 + num2).toFixed(2);
+        document.getElementById('six').innerHTML = result1;
+
+
+        const result2 = 0.10 * 10 + 2 / 0.9 - 0.67;
+        const roundedResult = result2.toFixed(2);
+        document.getElementById('six2').innerHTML = roundedResult;
+
+
+        let a = 1;
+        let b = 1;
+        let y = new Number(1);
+        let z = new Number(1);
+        document.write(" a = = b " + (a == b) + "<br>");
+
+        document.write("a = = = b " + (a === b) + "<br>");
+
+        document.write("a = = y " + (a == y) + "<br>");
+
+        document.write("a = = = y " + (a === y) + "<br>");
+
+        document.write("y = = z " + (y == z) + "<br>");
+
+        document.write("y = = = z " + (y === z) + "<br>");
+
+
+        //Q7 
+        document.write("<br>");
+        let value1 = Number.EPSILON;
+        document.write("EPSILON: " + value1 + "<br>");
+        document.write("<br>");
+
+        let value2 = Number.MAX_VALUE;
+        document.write("MAX_VALUE: " + value2 + "<br>");
+        document.write("<br>");
+
+        let value3 = Number.MIN_VALUE;
+        document.write("MIN_VALUE: " + value3 + "<br>");
+        document.write("<br>");
+
+        let value4 = Number.MAX_SAFE_INTEGER;
+        document.write("MAX_SAFE_INTEGER: " + value4 + "<br>");
+        document.write("<br>");
+
+        let value5 = Number.MIN_SAFE_INTEGER;
+        document.write("MIN_SAFE_INTEGER: " + value5 + "<br>");
+        document.write("<br>");
+
+        let value6 = Number.POSITIVE_INFINITY;
+        document.write("POSITIVE_INFINITY: " + value6 + "<br>");
+        document.write("<br>");
+
+        let value7 = Number.NEGATIVE_INFINITY;
+        document.write("NEGATIVE_INFINITY: " + value7 + "<br>");
+        document.write("<br>");
+
+
+        //this method will convert number into string 
+        let value8 = 63;
+        let result3 = value8.toString();
+
+        //this method will Convert a number into an exponential notation 
+        let value9 = 5.56789;
+        let result4 = value9.toExponential();
+
+        //The method converts a number to a string n rounds the string to a specified number of decimals.
+        let value10 = 9999.12345;
+        let result5 = value10.toFixed(2);
+
+        //this method with return number with specify length
+        let value11 = 12345.98765;
+        let result6 = value11.toPrecision(4);
+
+        //this method will return the primitive value of a Number object.
+        let value12 = new Number(14);
+        let result7 = value12.valueOf();
+
+
+        document.write(result3);
+        document.write("<br>");
+        document.write(result4);
+        document.write("<br>");
+        document.write(result5);
+        document.write("<br>");
+        document.write(result6);
+        document.write("<br>");
+        document.write(result7);
+
+
+
+    </script>
+</body>
+
+</html>
